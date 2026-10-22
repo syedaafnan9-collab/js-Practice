@@ -363,21 +363,26 @@
 // getUsers();
 
 
-async function getUsers() {
-  try {
-    const response = await fetch(
-      "https://example.com/users"
-    );
+// async function getUsers() {
+//   try {
+//     const response = await fetch(
+//       "https://example.com/users"
+//     );
 
-    if (!response.ok) {
-      throw new Error("Request failed");
-    }
+//     if (!response.ok) {
+//       throw new Error("Request failed");
+//     }
 
-    const data = await response.json();
-    console.log(data);
-  } catch (error) {
-    console.log(error.message);
-  }
+//     const data = await response.json();
+//     console.log(data);
+//   } catch (error) {
+//     console.log(error.message);
+//   }
+// }
+
+// getUsers();
+
+function double (num) {
+    return num * 2;
 }
-
-getUsers();
+console.log(double(5));
